@@ -5,12 +5,15 @@ const noBtn = document.querySelector('.nobut');
 const wrapperRect = wrapper.getBoundingClientRect();
 const noBtnRect = noBtn.getBoundingClientRect();
 yesBtn.addEventListener('click', () => {
-    question.innerHTML = 'L BOZOO GADA AWOKAWOK';
-    yesBtn.remove()
-    noBtn.remove()
     setTimeout(() => {
-        window.location.href = "https://youtu.be/eBGIQ7ZuuiU?si=IveCcQMDg_GXo2We";
-}, 1000);
+        question.innerHTML = 'L BOZOO GADA AWOKAWOK';
+        yesBtn.remove()
+        noBtn.remove()
+        setTimeout(() => {
+            window.location.href = "https://youtu.be/eBGIQ7ZuuiU?si=IveCcQMDg_GXo2We";
+    }, 1000);
+    }, 500);
+
 });
 
 noBtn.addEventListener('mouseover', () => {
